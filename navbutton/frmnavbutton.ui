@@ -1,0 +1,2110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmNavButton</class>
+ <widget class="QWidget" name="frmNavButton">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑 Light</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Wodget</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/lion.png</normaloff>images/lion.png</iconset>
+  </property>
+  <widget class="QWidget" name="widgetNav" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>120</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="NavButton" name="navButton0">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>主       页</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="NavButton" name="navButton2">
+      <property name="text">
+       <string>模拟测试</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="NavButton" name="navButton1">
+      <property name="text">
+       <string>程序对拍</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="NavButton" name="navButton3">
+      <property name="text">
+       <string>教学演示</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="NavButton" name="navButton4">
+      <property name="text">
+       <string>自由练习</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="NavButton" name="navButton5">
+      <property name="text">
+       <string>更       多</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="NavButton" name="navButton6">
+      <property name="text">
+       <string>关       于</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="NavButton" name="navButton7">
+      <property name="text">
+       <string>退       出</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>0</y>
+     <width>571</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>6</number>
+   </property>
+   <widget class="QWidget" name="page0_Main">
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>202</width>
+       <height>220</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/MainPage.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>5</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b2b2b2;&quot;&gt;PKU ICA Helper&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page1_Echo">
+    <widget class="QPushButton" name="echo_main_begin">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>300</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开始对拍</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="stdGroup">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>401</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>标准程序</string>
+     </property>
+     <widget class="QLineEdit" name="std_display">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="std_path">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>30</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>浏览...</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="testGroup">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>401</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>测试程序</string>
+     </property>
+     <widget class="QLineEdit" name="test_display">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="test_path">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>30</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>浏览...</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="inputGroup">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>401</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输入形式</string>
+     </property>
+     <widget class="QLineEdit" name="input_display">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="No_input">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>30</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>无输入</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="manual_input">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>30</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>手动输入</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="program_generation">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>程序生成</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="input_path">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>60</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>浏览...</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="echo_reset">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>300</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>重      置</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="loopGroup">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>191</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>测试次数</string>
+     </property>
+     <widget class="QLineEdit" name="loop_num">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loop_reset">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>重置</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page2_Test">
+    <widget class="QGroupBox" name="test_main_difficulty">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>181</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>难度选择</string>
+     </property>
+     <widget class="QRadioButton" name="diff_easy">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>115</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>简单/Easy</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="diff_medium">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>141</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>中等/Medium</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="diff_hard">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>115</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>困难/Hard</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="test_main_points">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>201</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>考点范围选择（至少3个）</string>
+     </property>
+     <widget class="QCheckBox" name="point1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>141</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>输入输出基础</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="point2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>变量基础</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="point3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>151</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>顺序、分支与循环</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="point4">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>数组</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="point5">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>字符串</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="point6">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>111</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>函数与递归</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="point7">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>131</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>深度优先搜索</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="point8">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>动态规划</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="point9">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>选学内容</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="test_main_num">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>181</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>题量选择</string>
+     </property>
+     <widget class="QRadioButton" name="num4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="num5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="num6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="num7">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>60</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="num8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="num9">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>90</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="test_main_begin">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>81</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开始</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="test_main_reset">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>310</y>
+       <width>81</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>重置</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page3_Demo">
+    <widget class="QPushButton" name="btn1_turing">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>图灵机</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn2_bool">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>逻辑运算</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn3_plusm">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>200</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>加法器</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn4_algo">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>280</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>算法演示</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="add_problem_note_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>40</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>通过动态可操控的图灵机模型，演示图灵机工作的可行性和基本原理。</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="add_problem_note_3">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>120</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>几种常用的门电路原理演示，可以动态操作观察原理。</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="add_problem_note_4">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>280</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>通过展示算法过程突出对比了深度优先搜索和广度优先搜索的不同之处。</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="add_problem_note_5">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>200</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>对逻辑运算演示的延伸，进一步展示了计算机工作实现加法的原理。</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>5</y>
+       <width>421</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>421</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>-7</x>
+       <y>20</y>
+       <width>41</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>20</y>
+       <width>41</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page4_Others">
+    <widget class="QGroupBox" name="practice_judging_result">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>160</y>
+       <width>101</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <property name="title">
+      <string>提交状态</string>
+     </property>
+     <widget class="QLabel" name="practice_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>25</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="practice_submit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>提交</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTextBrowser" name="practice_problem">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>331</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+      </font>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="practice_problem_num_box">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>10</y>
+       <width>101</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <property name="title">
+      <string>问题跳转</string>
+     </property>
+     <widget class="QLineEdit" name="practice_get_problemid">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1000</string>
+      </property>
+      <property name="maxLength">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="practice_show_problem">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>跳转</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="practice_random">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>随机跳转</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="practice_reset">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>320</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>重置</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page5_Setting">
+    <widget class="QStackedWidget" name="more_function">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>431</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>4</number>
+     </property>
+     <widget class="QWidget" name="more_fun0">
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>50</y>
+         <width>200</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/MainPage.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="more_fun1">
+      <widget class="QGroupBox" name="point_and_difficulty">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>291</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>考点、难度选择</string>
+       </property>
+       <widget class="QComboBox" name="add_problem_point">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="currentText">
+         <string>请选择考点…</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="duplicatesEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>请选择考点…</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>输入输出基础</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>变量基础</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>顺序、分支与循环</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>数组</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>字符串</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>函数与递归</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>深度优先搜索</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>动态规划</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>选学内容</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="add_problem_difficulty">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>请选择难度…</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>入门</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>简单</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>中等</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>较难</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>困难</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="problem_file">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>129</y>
+         <width>431</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>题目描述文件</string>
+       </property>
+       <widget class="QLineEdit" name="problem_file_path">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>301</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>请提交题面描述文件...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="problem_file_search">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>30</y>
+          <width>93</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>浏览...</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="problem_input_file">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>190</y>
+         <width>431</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>输入文件</string>
+       </property>
+       <widget class="QLineEdit" name="problem_input_path">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>301</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>请提交输入文件...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="problem_input_search">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>30</y>
+          <width>93</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>浏览...</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="problem_output_file">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>250</y>
+         <width>431</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>标准输出文件</string>
+       </property>
+       <widget class="QLineEdit" name="problem_output_path">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>301</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>请提交标准输出文件...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="problem_output_search">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>30</y>
+          <width>93</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>浏览...</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="problem_time_limitation">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>60</y>
+         <width>131</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>时间限制</string>
+       </property>
+       <widget class="QComboBox" name="problem_time_choose">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>请选择...</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>200ms</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>500ms</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1000ms</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2000ms</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5000ms</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="add_problem_reset">
+       <property name="geometry">
+        <rect>
+         <x>372</x>
+         <y>20</y>
+         <width>51</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>重置</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="add_problem_confirm">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>20</y>
+         <width>51</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="add_problem_note">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>5</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>提示：题目描述、输入、标准输出文件后缀名分别为.txt、.in、.out；请尽量采用多组数据点捆绑测试。</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="more_fun2">
+      <widget class="QGroupBox" name="p_problem_list">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>201</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>已解决的问题</string>
+       </property>
+       <widget class="QTextBrowser" name="pass_problem">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>181</width>
+          <height>211</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="np_problem_list">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>201</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>尝试但未解决的问题</string>
+       </property>
+       <widget class="QTextBrowser" name="no_pass_problem">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>181</width>
+          <height>211</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="total_problem">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>191</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>题目总数：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="p_problem_num">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>20</y>
+         <width>191</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>已解决题目总数：</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="more_fun3">
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>421</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PKU ICA Helper的主要功能包括模拟测试、程序对拍、教学演示。
+【模拟测试】本功能支持用户自定义选取难度、题量、考点范围（要求至少选择三个考点）。在正式测试界面中，用户可通过左侧题目列表切换题目，通过“提交”按钮进行.cpp源文件的提交。每道题均可多次提交，评测结果将实时显示。
+【程序对拍】本功能支持用户自行上传两个.cpp源文件，由程序编译后进行对拍。对拍的输入支持由程序生成对拍数据（此时同时需要上传数据生成程序）、手动输入对拍数据及无需输入数据三种模式。当您选择由程序生成对拍数据时，可以自定义对拍循环次数。
+【教学演示】本功能对教学中涉及的计算机基本原理及算法做出了可视化演示，可以通过点击操作动态演示以上内容，使用户对于相关知识点有更深刻的理解。共包含四个部分：图灵机演示、逻辑运算演示、加法器演示、算法演示。
+</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="click_for_instructions">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>280</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>点击此处</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="for_instructions">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>280</y>
+         <width>311</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>查看PKU ICA Helper的完整使用教程文档。</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="more_fun4">
+      <widget class="QPushButton" name="link_2_name">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>111</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>北大教学网</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_3_name">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>111</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>北大信息门户</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_4_name">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>111</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>编程网格</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_5_name">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>220</y>
+         <width>111</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>openjudge</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_6_name">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>270</y>
+         <width>111</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>洛谷</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_2_link">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>70</y>
+         <width>261</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>course.pku.edu.cn</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_1_name">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>111</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>北京大学</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_1_link">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>20</y>
+         <width>261</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>www.pku.edu.cn</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_3_link">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>120</y>
+         <width>261</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>portal.pku.edu.cn</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_4_link">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>170</y>
+         <width>261</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>programming.pku.edu.cn</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_5_link">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>220</y>
+         <width>261</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>openjudge.cn</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="link_6_link">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>270</y>
+         <width>261</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>www.luogu.com.cn</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="morefun_add_problem">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="text">
+      <string>添加题目</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="morefun_statistics">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>91</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>数据统计</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="morefun_beginner">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>91</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTipDuration">
+      <number>-1</number>
+     </property>
+     <property name="text">
+      <string>快速入门</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="morefun_links">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>10</y>
+       <width>91</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>友情链接</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page6_About">
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>50</y>
+       <width>361</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;PKU ICA Helper 0.1.0是北京大学2022年春程序设计实习的课程大作业项目。&lt;/p&gt;&lt;p&gt;本项目计划服务于北京大学计算概论（A）课程的教学与实践，也可应用于其它编程类课程。&lt;/p&gt;&lt;p&gt;教师可使用演示功能进行教学，学生可使用测试、对拍、练习等功能辅助编程学习。&lt;/p&gt;&lt;p&gt;贡献者：北京大学信息科学技术学院2021级本科生yk、zlx、lxc&lt;/p&gt;&lt;p&gt;Copyright © 2022 随机生成器 &lt;/p&gt;&lt;p&gt;根据GNU General Public License v3.0协议公开&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>308</x>
+       <y>210</y>
+       <width>161</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/MainPage.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>421</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>21</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>411</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_8">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>30</y>
+       <width>21</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <zorder>label_8</zorder>
+    <zorder>line_5</zorder>
+    <zorder>line_6</zorder>
+    <zorder>line_7</zorder>
+    <zorder>line_8</zorder>
+    <zorder>label_6</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NavButton</class>
+   <extends>QPushButton</extends>
+   <header>navbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
