@@ -1,11 +1,7 @@
 # PKU-ICA-Helper
-北京大学2022年春程序设计实习Qt大作业\
-****************************\
-**     PKU ICA Helper     **\
-****************************\
-北京大学2022年春程序设计实习Qt大作业\
+PKU ICA Helper\
 32-随机生成器队\
-根据GNU General Public License v3.0协议公开\
+本项目为北京大学2022年春程序设计实习Qt大作业，根据GNU General Public License v3.0协议公开。\
 \
 navbutton文件夹：Qt工程源代码（除本地评测机、对拍器）\
 addition文件夹：Judge_program——本地评测机源代码、Echo_compile——对拍器的源代码\
