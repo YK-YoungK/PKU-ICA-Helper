@@ -3,7 +3,7 @@ PKU ICA Helper\
 本项目为北京大学2022年春程序设计实习Qt大作业，根据GNU General Public License v3.0协议公开。\
 \
 navbutton文件夹：Qt工程源代码（除本地评测机、对拍器）\
-addition文件夹：Judge_program——本地评测机源代码、Echo_compile——对拍器的源代码\
+addition文件夹：Judge_program——本地评测机的源代码、Echo_compile——对拍器的源代码\
 Echo_demos文件夹：用于测试&演示的示例程序代码\
 initialized_file文件夹：工程运行所需的外部文件\
 \
